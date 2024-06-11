@@ -1,0 +1,335 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+#leftPanel {
+    position: relative;
+    width: 250px;
+    overflow: hidden;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    background-color: #2c2c2e;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#leftPanel video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#leftPanel h2, #leftPanel p {
+    position: relative;
+    z-index: 1;
+    color: white;
+    margin: 20px;
+}
+
+#leftPanel h2 i, #leftPanel p i {
+    margin-right: 10px;
+}
+
+#toggleButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#leftPanel .proauth-title {
+    text-align: center;
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+#leftPanel .proauth-title i {
+    margin-right: 10px;
+}
+
+.logout {
+    position: center;
+    bottom: 10px;
+    left: 10px;
+    background: rgb(64, 143, 72);
+    border: none;
+    color: rgba(218, 234, 234, 0.942);
+    margin-left: 70px;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.logout::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #344b57, #232526, #383838, #16d070);
+}
+
+.logout:hover {
+    background: transparent;
+    box-shadow: 0 0 20px 5px rgba(41, 214, 55, 0.895);
+    color: #4CAF50;
+}
+
+#mainContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    position: relative;
+}
+
+
+
+#animatedBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(45deg, #1d1f20, #232526, #3a3a3a, #232526);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+#countdownCircleContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 150px;
+}
+
+#countdownCircle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #4CAF50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    position: absolute;
+}
+
+#dottedCircle {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+}
+
+#generateButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#generateButton i {
+    margin-right: 10px;
+}
+
+#generateButton:hover {
+    background-color: #45a049;
+}
+
+#codeDisplay {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #120931;
+    position: relative;
+    width: 100%;
+    color: white;
+    overflow: hidden;
+}
+
+footer video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+footer .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.social-btn {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-btn:hover {
+    color: #4CAF50;
+}
+
+#menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#menuButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#menuContent {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #333;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#menuContent button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+}
+
+#menuContent button:hover {
+    background-color: #4CAF50;
+}
+
+#menuContent button i {
+    margin-right: 10px;
+}
+
+#codeContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+#codeDisplay {
+    font-size: 20px;
+}
+
+#copyButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#copyButton i {
+    font-size: 16px;
+}
+
+#copyButton:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Add some space between elements */
+}
+
+/*footer .site-logo {
+    height: 40px; Adjust as needed 
+    margin-right: 20px; Adjust spacing between the logo and the text
+    align-self: flex-start; Align the logo to the start of the flex container
+    position: left;
+} */
+
+footer .social-btn {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .social-btn:hover {
+    color: #4CAF50;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/appAuth.png">
+    <title>ProAuth</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f04d;
+        }
+
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 700px;
+            padding: 20px;
+            background-color: rgba(190, 181, 181, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            z-index: 1;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-right: 700px;
+            margin-left: 700px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .intro-text {
+            margin: 20px 0;
+            font-size: 18px;
+            color: #555;
+        }
+
+        .features {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .features h2 {
+            font-size: 20px;
+            color: #333;
+        }
+
+        .features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .features li {
+            margin: 10px 0;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .login-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: hsl(279, 48%, 25%);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 10px;
+            margin-top: 100px;
+            width: 100%;
+            position: relative;
+        }
+
+        .login-button:hover {
+            box-shadow: 0 0 20px 5px rgb(76, 12, 76);
+        }
+
+        .login-button img {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .social-btn {
+            margin: 0 5px;
+            color: #777;
+            text-decoration: none;
+        }
+
+        .social-btn:hover {
+            color: #333;
+        }
+
+        .right-section {
+            display: flex;
+            align-items: center;
+            width: 30%;
+        }
+
+        .right-section img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 5px;
+            margin-left: 20px;
+            border: 2px solid #140c0c;
+            box-shadow: 0 20px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="video-background">
+        <source src="../videos/Auth_vid.mp4" type="video/webm">
+    </video>
+
+    <div class="container">
+        <div class="header">
+            <img src="../images/appAuth.png" alt="App Logo">
+            <h1>Sign in to ProAuth</h1><br><br><br>
+        </div>
+        <div class="intro-text">
+            <p>Welcome to ProAuth, your ultimate solution for secure authentication and access management. Sign in with your Google account to get started.</p><br>
+        </div>
+        <div class="right-section">
+
+            <img src="../images/easy_integration.webp" alt="easy">
+            <p>Easy to Integrate</p>
+
+            <img src="../images/secure.jpg" alt="secure">
+            <p>Secure authentication</p>
+
+            <img src="../images/private_confidential.jpg" alt="quick">
+            <p>Private and Confidential</p>
+        </div>
+        <div class="features"><br>
+        </div>
+        <button class="login-button" onclick="location.href='/login'">
+            <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google logo"/>
+            Sign in with Google
+        </button>
+        <div class="footer">
+            <p>Developed by <i>Carey</i></p>
+            <a href="https://www.linkedin.com/in/cery-akida-a619911a8/" class="social-btn" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/carey_edwine" class="social-btn" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/carey_edwin" class="social-btn" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/254790131210" class="social-btn" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+</body>
+</html>
