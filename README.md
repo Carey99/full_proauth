@@ -1,5 +1,4 @@
-![External Image](https://app.hackernoon.com/a55a51ca-94dd-493f-8d14-2bc7b4793b68)
-
+<img src="my_flask_app/images/proauth.png" alt="Project Logo" width="200"/>
 ProAuth
 
 Be a Pro and secure your data. ProAuth is an authenticator web application that adds extra security protocol while logging into a given application. It randomly generates a unique six-digit code every 60 seconds.
@@ -103,4 +102,3 @@ LastPass Authenticator
 Authenticator Plus 
 
 
-…e.t.c
