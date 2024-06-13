@@ -1,4 +1,4 @@
-<img src="my_flask_app/images/proauth.png" alt="Project Logo" width="200"/>
+<img src="my_flask_app/images/appAuth.png" alt="Project Logo" width="200"/>
 ProAuth
 
 Be a Pro and secure your data. ProAuth is an authenticator web application that adds extra security protocol while logging into a given application. It randomly generates a unique six-digit code every 60 seconds.
