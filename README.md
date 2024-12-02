@@ -87,12 +87,6 @@ Users could be unable to authenticate themselves due to OTP time out or service 
 Solution: Backup with an alternative authentication method in case the service fails
 
 
-Infrastructure
-
-
-Note: Coming soon once a team is set and deployment discussed
-
-
 Existing Solutions
 
 
